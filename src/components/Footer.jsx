@@ -52,8 +52,8 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h3>Contact Us</h3>
           <p><strong>Address:</strong> Satkhira, Kaliganj, BD</p>
-          <p><strong>Email:</strong> aburaihian.it009@gmail.com</p>
-          <p><strong>Phone:</strong> +88 01407152619</p>
+          <p><strong>Email:</strong> test@test.com</p>
+          <p><strong>Phone:</strong> +88 1234 5678</p>
         </div>
 
         {/* Follow Us Links */}

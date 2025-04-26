@@ -34,3 +34,10 @@ h2 {
 .logoItem img:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .logoGrid {
+        /* grid-template-columns: repeat(auto-fit, minmax(120px, 3fr)); */
+    }
+  }
+  

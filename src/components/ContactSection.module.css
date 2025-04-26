@@ -97,3 +97,12 @@ p {
     left: 125%;
   }
 }
+
+@media (max-width: 768px) {
+   
+    .contact {
+        flex-direction: column;
+    }
+    
+  }
+  
