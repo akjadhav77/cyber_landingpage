@@ -1,0 +1,36 @@
+.partners {
+  padding: 45px 20px 45px 20px;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  background-image: url(../assets/faqbg.jpg);
+  background-size: auto;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7); /* black with 60% opacity */
+  background-blend-mode: overlay;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logoItem img {
+  width: 100px;
+  height: auto;
+  /* opacity: 0.8; */
+  transition: opacity 0.3s ease;
+  /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); */
+}
+
+.logoItem img:hover {
+  opacity: 1;
+}

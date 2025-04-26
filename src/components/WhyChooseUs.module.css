@@ -1,0 +1,114 @@
+.whyChooseUs {
+    padding: 20px 20px;
+    background: #1a1a2e;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .textSection {
+    flex: 1 1 500px;
+    padding-right: 30px;
+  }
+  
+  .imageSection {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .imageSection img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #cccccc;
+  }
+  
+  .learnMoreBtn {
+    /* background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; */
+    /* background: linear-gradient(90deg, #ff47da, #3333ff);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out; */
+
+    position: relative;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-position 0.3s ease-in-out;
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+
+  .learnMoreBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-35deg);
+  }
+  
+  .learnMoreBtn:hover {
+    /* background: linear-gradient(90deg, #3333ff, #ff00cc); */
+    background-position: right center;
+  }
+  
+  .learnMoreBtn:hover::before {
+    animation: shine 1s forwards;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 125%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .textSection {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+  

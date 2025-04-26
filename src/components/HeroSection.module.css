@@ -1,0 +1,108 @@
+.hero {
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #0f0f1b, #1a1a2e); */
+    /* background: linear-gradient(to bottom, #0f0f1b, #bfbfc9); */
+    background-image: url(../assets/Flux_Dev_Futuristic_cyber_security_concept_with_a_dark_digital_0.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .content {
+    max-width: 800px;
+  }
+
+  .textContainer {
+    /* background-color: rgba(94, 183, 241, 0.3);
+    padding: 20px;
+    border-radius: 0 10px;
+    backdrop-filter: blur(5px);  */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    background-color: rgba(94, 183, 241, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); 
+  }
+  
+  .highlight {
+    color: #ff9900;
+  }
+  
+  .highlight2 {
+    color: #ff6600;
+  }
+  
+  .subtext {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #cccccc;
+  }
+  
+  /* .ctaButtons {
+    background: linear-gradient(90deg, #ff47da, #3333ff);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 150% 150%;
+
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+  .ctaButtons:hover {
+    background-position: right center;
+  } */
+
+  .ctaButton {
+    position: relative;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-position 0.3s ease-in-out;
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  
+  .ctaButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-35deg);
+  }
+  
+  .ctaButton:hover {
+    background-position: right center;
+  }
+  
+  .ctaButton:hover::before {
+    animation: shine 1.2s forwards;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 125%;
+    }
+  }

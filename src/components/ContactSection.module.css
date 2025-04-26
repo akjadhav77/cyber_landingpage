@@ -1,0 +1,99 @@
+.contact {
+  padding: 45px 20px 50px 20px;
+  background: #0f0f1b;
+  color: white;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 40px;
+  color: #cccccc;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 15px;
+  background: #1e1e2f;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.contactForm button {
+  /* padding: 15px;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem; */
+  /* background: linear-gradient(90deg, #ff47da, #3333ff);
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size: 150% 150%;
+  transition: background-position 0.3s ease-in-out; */
+
+  position: relative;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-position 0.3s ease-in-out;
+  background-size: 200% 200%;
+  background-position: left center;
+}
+
+.contactForm button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-35deg);
+}
+
+.contactForm button:hover {
+  /* background: linear-gradient(90deg, #3333ff, #ff00cc); */
+  background-position: right center;
+}
+
+.contactForm button:hover::before {
+  animation: shine 1.6s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
