@@ -29,4 +29,15 @@
     color: #ff00cc;
     font-size: 1.1rem;
   }
+
+  @media (max-width: 768px) {
+   
+    .testTitle {
+      align-items: center;
+      font-size: 1.6rem;
+    }
+
+    
+  }
+  
   

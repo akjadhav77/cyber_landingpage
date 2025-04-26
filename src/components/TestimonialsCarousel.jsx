@@ -27,7 +27,7 @@ const testimonials = [
 const TestimonialsCarousel = () => {
   return (
     <section className={styles.testimonials} id="testimonials">
-      <h2>Recommendations From Past Customers</h2>
+      <h2 className={styles.testTitle}>Recommendations From Past Customers</h2>
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={30}

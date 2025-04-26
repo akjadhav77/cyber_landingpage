@@ -12,7 +12,7 @@ const ContactSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <img src={contactImage} alt="Contact Image" />
+        <img className={styles.contactImage} src={contactImage} alt="Contact Image" />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 85 }}
